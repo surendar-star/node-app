@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment{
         DOCKER_TAG = getDockerTag()
-        NEXUS_URL  = "172.31.34.232:8080"
+        NEXUS_URL  = "34.72.104.51:8081"
         IMAGE_URL_WITH_TAG = "${NEXUS_URL}/node-app:${DOCKER_TAG}"
     }
     stages{
